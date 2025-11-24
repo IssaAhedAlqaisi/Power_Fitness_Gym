@@ -146,6 +146,9 @@ const translations = {
     contact_form_message: "رسالتك",
     contact_form_submit: "إرسال",
 
+    footer_call_label: "اتصال:",
+    footer_whatsapp_label: "واتساب:",
+    footer_social_label: "تابعنا:",
     footer_rights: "جميع الحقوق محفوظة © باور فيتنس جيم"
   },
 
@@ -297,6 +300,9 @@ const translations = {
     contact_form_message: "Your message",
     contact_form_submit: "Send",
 
+    footer_call_label: "Call:",
+    footer_whatsapp_label: "WhatsApp:",
+    footer_social_label: "Follow us:",
     footer_rights: "All rights reserved © Power Fitness Gym"
   }
 };
