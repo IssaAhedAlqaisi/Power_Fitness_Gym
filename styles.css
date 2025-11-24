@@ -725,7 +725,89 @@ body {
 }
 
 .footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* بلوك الاتصال والسوشال */
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-contacts-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+}
+
+.footer-line span {
+  margin-inline-end: 6px;
+}
+
+.footer-link {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--accent-soft);
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-social-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-link {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-main);
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.social-link:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(230, 50, 50, 0.6);
+}
+
+.social-link i {
+  font-size: 0.9rem;
+}
+
+.footer-rights {
   text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 
 /* REVEAL ANIMATION */
@@ -775,6 +857,11 @@ body {
 
   .schedule-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
