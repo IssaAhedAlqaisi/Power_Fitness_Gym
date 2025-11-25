@@ -84,7 +84,7 @@ body {
 }
 
 .logo-img {
-  width: 78px; /* أكبر من قبل */
+  width: 78px;
   height: 78px;
   object-fit: contain;
   filter: drop-shadow(0 0 16px rgba(255, 0, 0, 0.5));
@@ -171,7 +171,7 @@ body {
   position: relative;
   min-height: 80vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end; /* نزلنا كل الكلام لنهاية الهيرو */
   isolation: isolate;
   overflow: hidden;
 }
@@ -198,14 +198,14 @@ body {
 
 .hero-content {
   position: relative;
-  padding-block: 110px 84px; /* نزلنا المحتوى لتحت */
+  padding-block: 110px 40px;
 }
 
 .hero-text {
   max-width: 680px;
 }
 
-/* الأزرار + الجملة */
+/* الأزرار */
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -217,20 +217,23 @@ body {
   align-items: center;
 }
 
-.hero-tagline {
-  font-size: 0.95rem;
-  color: var(--text-main);
-  padding: 6px 14px;
+/* هايلايت */
+.hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.hero-highlights span {
+  padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.6);
 }
 
-/* زر الموقع */
-.hero-location {
-  margin-bottom: 18px;
-}
-
+/* زر الموقع (يستخدم أيضاً بالفوتر) */
 .btn {
   border-radius: 999px;
   border: none;
@@ -281,22 +284,6 @@ body {
 .btn-location:hover {
   border-color: var(--accent-soft);
   color: var(--accent-soft);
-}
-
-/* هايلايت */
-.hero-highlights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-}
-
-.hero-highlights span {
-  padding: 4px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(0, 0, 0, 0.6);
 }
 
 /* SECTION GENERIC */
@@ -537,7 +524,7 @@ body {
   height: 100%;
 }
 
-/* السلايدر المتحرك */
+/* السلايدر المتحرك - Zoom Out */
 .auto-slider {
   position: relative;
   border-radius: var(--radius-lg);
@@ -558,7 +545,7 @@ body {
 .slider-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* زووم آوت */
 }
 
 .slider-image.active {
@@ -764,6 +751,13 @@ body {
   font-size: 0.9rem;
 }
 
+/* زر الموقع بالفوتر */
+.footer-location {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+}
+
 .footer-rights {
   text-align: center;
   font-size: 0.8rem;
@@ -797,7 +791,7 @@ body {
   }
 
   .hero-content {
-    padding-block: 110px 72px;
+    padding-block: 110px 32px;
   }
 }
 
@@ -805,10 +799,6 @@ body {
   .hero-cta-row {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .hero-tagline {
-    order: -1; /* على الموبايل تظهر فوق الأزرار */
   }
 
   .plans-grid,
@@ -823,6 +813,10 @@ body {
   .footer-contact {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-location {
+    justify-content: flex-start;
   }
 }
 
