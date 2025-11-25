@@ -104,7 +104,7 @@ const translations = {
     gallery_subtitle:
       "شوف أجواء باور فيتنس جيم قبل ما تزورنا على أرض الواقع.",
     gallery_video_title: "فيديو للجيم",
-    gallery_pool_title: "صور المسبح",
+    gallery_slider_title: "معرض الصور",
 
     stories_title: "قصص ونصائح من الجيم",
     stories_subtitle:
@@ -258,7 +258,7 @@ const translations = {
     gallery_subtitle:
       "Get a feeling of Power Fitness Gym before you step in.",
     gallery_video_title: "Gym tour video",
-    gallery_pool_title: "Pool photos",
+    gallery_slider_title: "Photo gallery",
 
     stories_title: "Stories & tips from the gym",
     stories_subtitle:
@@ -329,7 +329,6 @@ function updateLanguage(lang) {
     const value = strings[key];
     if (typeof value === "string") {
       el.textContent = value;
-      // لو العنوان غليتش نخزن النص في data-text (حتى لو بدون تأثير بصري)
       if (el.classList.contains("glitch")) {
         el.setAttribute("data-text", value);
       }
@@ -371,6 +370,17 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   revealElems.forEach((el) => revealObserver.observe(el));
+
+  // السلايدر المتحرك للصور
+  const sliderImages = document.querySelectorAll(".auto-slider .slider-image");
+  if (sliderImages.length > 0) {
+    let current = 0;
+    setInterval(() => {
+      sliderImages[current].classList.remove("active");
+      current = (current + 1) % sliderImages.length;
+      sliderImages[current].classList.add("active");
+    }, 3500); // كل 3.5 ثانية صورة جديدة
+  }
 
   // منع إرسال الفورم الحقيقي (تجريبي)
   const form = document.querySelector(".contact-form");
