@@ -5,7 +5,12 @@
   <title>Power Fitness Gym</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- أيقونات للفيس والإنستا -->
+  <!-- خط Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- أيقونات سوشال -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <link rel="stylesheet" href="styles.css" />
@@ -43,7 +48,7 @@
 
   <!-- HERO -->
   <section id="hero" class="hero">
-    <!-- صورة الهيرو الجديدة -->
+    <!-- صورة الهيرو -->
     <img
       src="https://i.imgur.com/gWDAUDs.png"
       alt="Power Fitness Gym Hero"
@@ -53,28 +58,33 @@
 
     <div class="container hero-content">
       <div class="hero-text reveal">
-        <div class="hero-badge" data-i18n="hero_badge">
-          صالة رياضية متكاملة في خلدا
-        </div>
-
-        <!-- العنوان بدون توهج، ونص جديد -->
-        <h1 class="hero-title glitch" data-i18n="hero_title" data-text="مستواك الجاي يبدأ من باور فيتنس جيم">
-          مستواك الجاي يبدأ من باور فيتنس جيم
-        </h1>
-
-        <p class="hero-subtitle" data-i18n="hero_subtitle">
-          حديد، كارديو، مسبح، ساونا، جاكوزي، بخار وأكثر في مكان واحد. بيئة منفصلة للرجال والسيدات وأجواء تدريب بتحمسك كل يوم.
-        </p>
-
-        <div class="hero-actions">
+        <!-- صف الأزرار + الجملة -->
+        <div class="hero-actions hero-cta-row">
           <a href="#plans" class="btn btn-primary" data-i18n="hero_cta_join">
             اشترك الآن
           </a>
           <a href="#contact" class="btn btn-ghost" data-i18n="hero_cta_contact">
             تواصل معنا
           </a>
+          <span class="hero-tagline" data-i18n="hero_cta_tagline">
+            صالة رياضية متكاملة في خلدا
+          </span>
         </div>
 
+        <!-- زر الموقع على الخريطة -->
+        <div class="hero-location">
+          <a
+            href="https://maps.app.goo.gl/a8VnexPYiyhx2yXCA?g_st=aw"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-location"
+            data-i18n="hero_cta_location"
+          >
+            الموقع على الخريطة
+          </a>
+        </div>
+
+        <!-- الهايلايتس تحت زي ما هي -->
         <div class="hero-highlights">
           <span data-i18n="hero_highlight_1">مسبح داخلي مميز</span>
           <span data-i18n="hero_highlight_2">مرافق سبا كاملة</span>
