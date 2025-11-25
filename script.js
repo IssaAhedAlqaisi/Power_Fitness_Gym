@@ -13,7 +13,7 @@ const translations = {
     nav_contact: "تواصل",
 
     hero_badge: "صالة رياضية متكاملة في خلدا",
-    hero_title: "مستواك الجاي يبدأ من هون",
+    hero_title: "مستواك الجاي يبدأ من باور فيتنس جيم",
     hero_subtitle:
       "حديد، كارديو، مسبح، ساونا، جاكوزي، بخار وأكثر في مكان واحد. بيئة منفصلة للرجال والسيدات وأجواء تدريب بتحمسك كل يوم.",
     hero_cta_join: "اشترك الآن",
@@ -165,7 +165,7 @@ const translations = {
     nav_contact: "Contact",
 
     hero_badge: "Full–service gym in Khalda",
-    hero_title: "Your next level starts here",
+    hero_title: "Your next level starts at Power Fitness Gym",
     hero_subtitle:
       "Weights, cardio, pool, sauna, jacuzzi, steam room and more in one place. Separate areas for men and women and a motivating training atmosphere.",
     hero_cta_join: "Join now",
@@ -329,7 +329,7 @@ function updateLanguage(lang) {
     const value = strings[key];
     if (typeof value === "string") {
       el.textContent = value;
-      // للغليتش نخزن النص في data-text
+      // لو العنوان غليتش نخزن النص في data-text (حتى لو بدون تأثير بصري)
       if (el.classList.contains("glitch")) {
         el.setAttribute("data-text", value);
       }
