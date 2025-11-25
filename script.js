@@ -12,12 +12,11 @@ const translations = {
     nav_stories: "القصص والنصائح",
     nav_contact: "تواصل",
 
-    hero_badge: "صالة رياضية متكاملة في خلدا",
-    hero_title: "مستواك الجاي يبدأ من باور فيتنس جيم",
-    hero_subtitle:
-      "حديد، كارديو، مسبح، ساونا، جاكوزي، بخار وأكثر في مكان واحد. بيئة منفصلة للرجال والسيدات وأجواء تدريب بتحمسك كل يوم.",
+    // الهيرو (بس الأزرار والجملة)
     hero_cta_join: "اشترك الآن",
     hero_cta_contact: "تواصل معنا",
+    hero_cta_tagline: "صالة رياضية متكاملة في خلدا",
+    hero_cta_location: "الموقع على الخريطة",
     hero_highlight_1: "مسبح داخلي مميز",
     hero_highlight_2: "مرافق سبا كاملة",
     hero_highlight_3: "مواقف من طابقين",
@@ -148,7 +147,7 @@ const translations = {
 
     footer_call_label: "اتصال:",
     footer_whatsapp_label: "واتساب:",
-    footer_social_label: "تابعنا:",
+    footer_social_label: "تابعنا",
     footer_rights: "جميع الحقوق محفوظة © باور فيتنس جيم"
   },
 
@@ -164,15 +163,13 @@ const translations = {
     nav_stories: "Stories & Tips",
     nav_contact: "Contact",
 
-    hero_badge: "Full–service gym in Khalda",
-    hero_title: "Your next level starts at Power Fitness Gym",
-    hero_subtitle:
-      "Weights, cardio, pool, sauna, jacuzzi, steam room and more in one place. Separate areas for men and women and a motivating training atmosphere.",
     hero_cta_join: "Join now",
     hero_cta_contact: "Contact us",
+    hero_cta_tagline: "Full-service gym in Khalda",
+    hero_cta_location: "Open in Maps",
     hero_highlight_1: "Indoor swimming pool",
     hero_highlight_2: "Full spa facilities",
-    hero_highlight_3: "Two–level parking",
+    hero_highlight_3: "Two-level parking",
 
     plans_title: "Membership plans",
     plans_subtitle:
@@ -188,15 +185,15 @@ const translations = {
     plan_feature_pool: "Includes pool and spa access",
     plan_feature_gym: "Full weights & cardio area",
     plan_feature_spa: "Sauna, jacuzzi & steam room",
-    plan_feature_save: "Better value for mid–term members",
+    plan_feature_save: "Better value for mid-term members",
     plan_feature_access: "Daily access to the club",
-    plan_feature_support: "Support from on–site trainers",
+    plan_feature_support: "Support from on-site trainers",
     plan_feature_long: "Visible progress in strength & fitness",
     plan_feature_body: "Build strong and lasting habits",
     plan_feature_bonus: "Seasonal offers and benefits",
     plan_feature_year: "Best value for dedicated members",
     plan_feature_transform: "A real chance to change your lifestyle",
-    plan_feature_family: "Perfect for year–round training lovers",
+    plan_feature_family: "Perfect for year-round training lovers",
     plan_best: "Most popular",
 
     facilities_title: "Power Fitness Gym facilities",
@@ -225,7 +222,7 @@ const translations = {
       "Comfortable changing rooms with lockers to keep your belongings safe.",
     fac_parking_title: "Parking",
     fac_parking_text:
-      "Two–level parking area for smooth access at any time.",
+      "Two-level parking area for smooth access at any time.",
 
     schedule_title: "Opening hours",
     schedule_subtitle:
@@ -236,21 +233,21 @@ const translations = {
     schedule_men_title: "Men’s section",
     schedule_men_hours: "From 6:00 AM to 12:00 midnight",
     schedule_men_note:
-      "High–energy training atmosphere all day long.",
+      "High-energy training atmosphere all day long.",
 
     why_title: "Why Power Fitness Gym?",
     why_subtitle:
       "Prime location, full facilities and solid experience since 2019.",
     why_location_title: "Location",
     why_location_text:
-      "Khalda – Sugar roundabout – Rawan Mall – 3rd floor. A strategic and easy–to–reach location.",
+      "Khalda – Sugar roundabout – Rawan Mall – 3rd floor. A strategic and easy-to-reach location.",
     why_parking_title: "Parking",
     why_parking_text:
-      "Two–level parking to make your visit smooth from the moment you arrive.",
+      "Two-level parking to make your visit smooth from the moment you arrive.",
     why_experience_title: "Experience",
     why_experience_text:
       "The club was founded in July 2019 and has since helped hundreds of members transform their lifestyle.",
-    why_full_title: "All–in–one facilities",
+    why_full_title: "All-in-one facilities",
     why_full_text:
       "Weights, cardio, pool, spa and changing rooms – everything you need in one place.",
 
@@ -275,9 +272,9 @@ const translations = {
     tip_1_title: "Start light, stay consistent",
     tip_1_text:
       "Don’t try to change your body overnight. Start with small, consistent steps and focus on commitment more than intensity at first.",
-    tip_2_title: "Never skip your warm–up",
+    tip_2_title: "Never skip your warm-up",
     tip_2_text:
-      "5–10 minutes of warm–up before training lowers your risk of injury and prepares your body for effort.",
+      "5–10 minutes of warm-up before training lowers your risk of injury and prepares your body for effort.",
     tip_3_title: "Sleep, hydrate, and eat well",
     tip_3_text:
       "Training is just one part of the picture. Good sleep, water intake and balanced nutrition are the real base for results.",
@@ -289,7 +286,7 @@ const translations = {
     contact_address_value:
       "Khalda – Sugar roundabout – Rawan Mall – 3rd floor",
     contact_parking_label: "Parking",
-    contact_parking_value: "Two–level parking for your convenience.",
+    contact_parking_value: "Two-level parking for your convenience.",
     contact_founded_label: "Founded",
     contact_founded_value: "July 2019",
     contact_note:
@@ -302,7 +299,7 @@ const translations = {
 
     footer_call_label: "Call:",
     footer_whatsapp_label: "WhatsApp:",
-    footer_social_label: "Follow us:",
+    footer_social_label: "Follow us",
     footer_rights: "All rights reserved © Power Fitness Gym"
   }
 };
@@ -329,9 +326,6 @@ function updateLanguage(lang) {
     const value = strings[key];
     if (typeof value === "string") {
       el.textContent = value;
-      if (el.classList.contains("glitch")) {
-        el.setAttribute("data-text", value);
-      }
     }
   });
 
