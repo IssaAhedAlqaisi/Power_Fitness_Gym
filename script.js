@@ -82,6 +82,8 @@ const translations = {
     schedule_men_hours: "من ٦ صباحاً ولغاية ١٢ منتصف الليل",
     schedule_men_note:
       "أجواء حماسية وتمارين قوية على مدار اليوم.",
+    schedule_women_table_title: "جدول حصص قسم السيدات",
+    schedule_men_table_title: "جدول حصص قسم الرجال",
 
     why_title: "لماذا باور فيتنس جيم؟",
     why_subtitle:
@@ -234,6 +236,8 @@ const translations = {
     schedule_men_hours: "From 6:00 AM to 12:00 midnight",
     schedule_men_note:
       "High-energy training atmosphere all day long.",
+    schedule_women_table_title: "Ladies schedule",
+    schedule_men_table_title: "Men’s schedule",
 
     why_title: "Why Power Fitness Gym?",
     why_subtitle:
