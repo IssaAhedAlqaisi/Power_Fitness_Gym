@@ -233,6 +233,14 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+/* جملة صالة رياضية */
+.hero-tagline {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  background: rgba(0, 0, 0, 0.7);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
 /* زر الموقع (يستخدم أيضاً بالفوتر) */
 .btn {
   border-radius: 999px;
@@ -470,6 +478,34 @@ body {
   margin: 0;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+/* جداول حصص السيدات والرجال */
+.schedule-images {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.schedule-image-card {
+  background: rgba(6, 6, 12, 0.95);
+  border-radius: var(--radius-xl);
+  padding: 14px 14px 16px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+}
+
+.schedule-image-card h3 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+}
+
+.schedule-image-card img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: contain; /* يبين الجدول كامل */
 }
 
 /* WHY */
